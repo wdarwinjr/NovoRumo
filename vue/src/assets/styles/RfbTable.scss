@@ -1,0 +1,77 @@
+.rfb-table {
+  border-collapse: collapse;
+  font-size: 12px;
+  width: 100%;
+
+  tr {
+    height: 25px;
+    border: none;
+  }
+  .table-title {
+    color: white;
+    font-weight: bold;
+    background-color: $A;
+    height: 45px;
+    td {
+      position: relative;
+      button {
+        position: absolute;
+        left: 10px;
+        top: 7px;
+      }
+    }
+  }
+
+  thead {
+    color: $A;
+    background-color: $B2;
+  }
+
+  .material-icons {
+    color: $A;
+    &:hover {
+      color: $B;
+    }
+  }
+
+  .sortAsc {
+    cursor: pointer;
+    &::after {
+      content: " \1f815";
+      color: $A;
+      font-weight: bold;
+    }
+  }
+
+  .sortDesc {
+    cursor: pointer;
+    &::after {
+      content: " \1f817";
+      color: $A;
+      font-weight: bold;
+    }
+  }
+
+  .sortable {
+    cursor: pointer;
+    &::after {
+      content: " \21C5";
+      color: $A;
+      opacity: 0.7;
+    }
+  }
+
+  td {
+    border-right: solid 1px lightgray;
+    border-left: solid 1px lightgray;
+  }
+
+  .even {
+    background-color: $F;
+  }
+
+  .total {
+    background-color: $B4;
+    padding-left: 10px;
+  }
+}
